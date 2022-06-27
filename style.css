@@ -341,19 +341,20 @@ footer h6{
 }
 @media screen and (max-width: 505px){
   main{
-    height: auto;
+    background-image: url("assets/main2.jpg");
+    height: 650px;
   }
   h1{
-    width: 75%;
-    font-size: 6rem;
-    padding-top: 0;
+    width: 100%;
+    font-size: 8rem;
+    padding-top: 50px;
   }
   main form{
-    font-size: 2rem;
+    font-size: 3rem;
   }
   main a{
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 50px;
   }
  section.about h4, section.about h2, section.about p, section.about a{
@@ -367,5 +368,47 @@ footer h6{
   }
   section.about h4{
     padding-top: 50px;
+  }
+  section.order h2{
+    font-size: 5rem;
+  }
+  section.order ul{
+    width: 100%;
+  }
+  section.order a{
+    font-size: 1.5rem;
+  }
+  section.book{
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  section.book h2{
+    font-size: 6rem;
+  }
+  section.book a{
+    font-size: 3rem;
+  }
+  section.book div h4{
+    font-size: 1.5rem;
+  }
+  div{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 25px auto;
+  }
+  section.testimonials h2{
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 475px){
+  h1{
+    font-size: 6rem;
+  }
+  main form{
+    font-size: 2rem;
+  }
+  main a{
+    font-size: 2rem;
   }
 }
