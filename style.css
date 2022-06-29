@@ -162,17 +162,6 @@ section.order li{
   display: inline-block;
   margin: 20px;
 }
-section.grid{
-  height: auto;
-  width: 100%;
-  margin: auto;
-  padding: 0 12.5%;
-}
-section.order img{
-  height: 400px;
-  width: 275px;
-  margin: 10px;
-}
 /*SECTION***********************************/
 
 /*CAROUSEL***********************************/
