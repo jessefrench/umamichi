@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-  	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
-  	<meta name="keywords" content="one, two, three">
+  		<meta charset="utf-8">
+  		<meta name="description" content="Your description goes here">
+  		<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Umamichi</title>
+		<title>Umamichi Japanese Cuisine</title>
 
-		<!--fonts-->
-		<script src="https://kit.fontawesome.com/d706b47c33.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
-		<!-- external CSS link -->
+		<!-- external CSS links -->
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+		<script src="https://kit.fontawesome.com/d706b47c33.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Menu</a></li>
-					<li><a href="#">Order Now</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Location</a></li>
-					<li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-					<li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about-us">About Us</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="#featured">Featured</a></li>
+					<li><a href="#book-a-table">Book Table</a></li>
+					<li><a href="#reviews">Reviews</a></li>
 					<li class="menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main id="home">
 			<h1>Welcome to Umamichi!</h1>
 			<form action="search">
                 <input class="box" type="text" placeholder="Search here">
                 <input class="button" type="submit" value="Location">
             </form>
-			<a href="#"><i class="fa-brands fa-facebook-f"></i> 252k</a>
-			<a href="#"><i class="fa-brands fa-twitter"></i> 62k</a>
-			<a href="#"><i class="fa-brands fa-instagram"></i> 55k</a>
+			<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i> 252k</a>
+			<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i> 62k</a>
+			<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i> 55k</a>
 		</main>
-		<section class="about">
+		<section class="about" id="about-us">
 			<h4>About Us</h4>
 			<h2>Discover Our Story</h2>
 			<p>
@@ -59,33 +59,119 @@
 				as well as an array of crafty sushi rolls. Our fine selection of beers, sakes, and wines complement the 
 				sophisticated flavors of our menu items.
 			</p>
-			<a href="#">Discover Menu ></a>
+			<a href="menu.html">Discover Menu ></a>
 		</section>
-		<section class="order">
-			<h4>Order Online Now</h4>
+		<section class="order" id="featured">
+			<h4>Authentic Dishes</h4>
 			<h2>Our Specialty Cuisine</h2>
 			<ul>
-				<li><a href="#">Breakfast</a></li>
-				<li><a href="#">Lunch</a></li>
-				<li><a href="#">Dinner</a></li>
-				<li><a href="#">Dessert</a></li>
-				<li><a href="#">Drinks</a></li>
+				<li><a href="menu.html#appetizers">Appetizers</a></li>
+				<li><a href="menu.html#soup-and-salads">Soup & Salads</a></li>
+				<li><a href="menu.html#udon">Udon</a></li>
+				<li><a href="menu.html#entrees">Entrees</a></li>
+				<li><a href="menu.html#lunch">Lunch</a></li>
+				<li><a href="menu.html#sushi">Sushi</a></li>
 			</ul>
-			<section class="grid">
-				<img src="assets/artur-rutkowski-LDxq4MnYB5U-unsplash.jpg">
-				<img src="assets/bon-vivant-qom5MPOER-I-unsplash.jpg">
-				<img src="assets/cody-chan-BLaiOhpirAQ-unsplash.jpg">
-				<img src="assets/eiliv-sonas-aceron-hjCA3ecCXAQ-unsplash.jpg">
-				<img src="assets/haley-truong-UcVxV6BN2z8-unsplash.jpg">
-				<img src="assets/jirayu-koontholjinda-G675o-lxbnQ-unsplash.jpg">
-				<img src="assets/kae-ng-qjM403Kjw00-unsplash.jpg">
-				<img src="assets/marina-grynykha-FBgCgJhPO2I-unsplash.jpg">
-			</section>
 		</section>
-		<section class="book">
+		<section id="slider">
+			<div class="container">
+				<div class="subcontainer">
+					<div class="slider-wrapper">
+						<div class="contoller">
+							<div>
+								<h4>Featured</h4>
+							</div>
+							<br>
+							<div id="controls">
+								<button class="previous"><i class="fa-solid fa-angle-left"></i></button>
+								<button class="next"><i class="fa-solid fa-angle-right"></i></button>
+							</div>
+						</div>
+						<br>
+						<div class="my-slider">
+							<div>
+								<div class="slide">
+									<div class="slide-img img-1">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+							<div>
+								<div class="slide">
+									<div class="slide-img img-2">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+							<div>
+								<div class="slide">
+									<div class="slide-img img-3">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+							<div>
+								<div class="slide">
+									<div class="slide-img img-4">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+							<div>
+								<div class="slide">
+									<div class="slide-img img-5">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+							<div>
+								<div class="slide">
+									<div class="slide-img img-6">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+							<div>
+								<div class="slide">
+									<div class="slide-img img-7">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+							<div>
+								<div class="slide">
+									<div class="slide-img img-8">
+										<a href="menu.html">See More</a>
+									</div>
+									<br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="grid">
+			<img src="assets/artur-rutkowski-LDxq4MnYB5U-unsplash.jpg">
+			<img src="assets/bon-vivant-qom5MPOER-I-unsplash.jpg">
+			<img src="assets/cody-chan-BLaiOhpirAQ-unsplash.jpg">
+			<img src="assets/eiliv-sonas-aceron-hjCA3ecCXAQ-unsplash.jpg">
+			<img src="assets/haley-truong-UcVxV6BN2z8-unsplash.jpg">
+			<img src="assets/jirayu-koontholjinda-G675o-lxbnQ-unsplash.jpg">
+			<img src="assets/kae-ng-qjM403Kjw00-unsplash.jpg">
+			<img src="assets/marina-grynykha-FBgCgJhPO2I-unsplash.jpg">
+		</section> -->
+		<section class="book" id="book-a-table">
 			<h4>Book Table</h4>
-			<h2>Opening Hours</h2>
-			<a href="#"><i class="fa-solid fa-square-phone"></i></a>
+			<h2>Current Hours</h2>
+			<a href="tel:1234567890"><i class="fa-solid fa-square-phone"></i></a>
 			<h5>Call Now</h5>
 			<h3>123-456-7890</h3>
 			<div class="left">
@@ -100,8 +186,8 @@
     			src="assets/video.mp4">
 			</video>
 		</section>
-		<section class="testimonials">
-			<h4>Testimonials</h4>
+		<section class="testimonials" id="reviews">
+			<h4>Reviews</h4>
 			<h2>Customers Say</h2>
 			<img class="face" src="assets/ajo-jose-D9HRdD46K0o-unsplash.png">
 			<h3>Julian</h3>
@@ -116,12 +202,12 @@
 		</section>
 		<footer>
 			<ul>
-				<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-				<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-				<li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+				<li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="mailto:" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
 			</ul>
-			<h6><a href="#">© Jesse French</a></h6>
+			<h6><a href="https://jessefrench.netlify.app" target="_blank">© Jesse French</a></h6>
 		</footer>
 		<script type="text/javascript" src="main.js"></script>
 	</body>

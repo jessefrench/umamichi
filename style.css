@@ -1,10 +1,10 @@
 /* Box Model Hack */
-* {
+*{
   box-sizing: border-box;
 }
 
 /* Clear fix hack */
-.clearfix:after {
+.clearfix:after{
      content: ".";
      display: block;
      clear: both;
@@ -13,7 +13,7 @@
      height: 0;
 }
 
-.clear {
+.clear{
 	clear: both;
 }
 
@@ -43,9 +43,7 @@ a{
 /* LAYOUT
 /*******************************************/
 
-
-
-/*HEADER************************************/
+/* HEADER************************************/
 header{
   background-color: #0f0e13;
 }
@@ -85,6 +83,8 @@ form{
 input.button{
   color: white;
   background: red;
+  border-radius: 5px;
+
 }
 main a{
   margin-left: 4%;
@@ -133,6 +133,7 @@ section.about a{
   margin-bottom: 50px;
   color: white;
   font-weight: 600;
+  border-radius: 5px;
 }
 /*SECTION***********************************/
 
@@ -174,6 +175,116 @@ section.order img{
 }
 /*SECTION***********************************/
 
+/*CAROUSEL***********************************/
+
+#slider{
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer{
+  width: 85%;
+  margin: auto;
+}
+
+.controller{
+  display: flex;
+  justify-content: space-between;
+}
+
+#controls i{
+  color: white;
+  font-size: 1rem;
+}
+
+.previous, .next{
+  padding: 2px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.7s ease-in-out;
+  border: 3px solid white;
+  background-color: black;
+  box-shadow: 0 0 5px #bbb;
+}
+
+.previous:hover, .next:hover{
+  border: 3px solid gray;
+}
+
+.slide-img{
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.slide-img:hover{
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.slide-img a{
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0;
+}
+
+.slide-img:hover a{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.img-1{
+  background-image: url("assets/artur-rutkowski-LDxq4MnYB5U-unsplash.jpg");
+}
+.img-2{
+  background-image: url("assets/marina-grynykha-hbcKVe0_Jg8-unsplash.jpg");
+}
+.img-3{
+  background-image: url("assets/cody-chan-BLaiOhpirAQ-unsplash.jpg");
+}
+.img-4{
+  background-image: url("assets/eiliv-sonas-aceron-hjCA3ecCXAQ-unsplash.jpg");
+}
+.img-5{
+  background-image: url("assets/haley-truong-UcVxV6BN2z8-unsplash.jpg");
+}
+.img-6{
+  background-image: url("assets/jirayu-koontholjinda-G675o-lxbnQ-unsplash.jpg");
+}
+.img-7{
+  background-image: url("assets/kae-ng-qjM403Kjw00-unsplash.jpg");
+}
+.img-8{
+  background-image: url("assets/marina-grynykha-FBgCgJhPO2I-unsplash.jpg");
+}
+
+@media(max-width:1600px){
+  .container{
+    width: 100%;
+  }
+}
+
+/*CAROUSEL***********************************/
+
 /*SECTION***********************************/
 section.book{
   height: auto;
@@ -213,7 +324,7 @@ section.book > h4{
   color: red;
   margin-bottom: 10px;
 }
-div{
+div.left, div.right{
   width: 25%;
   text-align: left;
   float: left;
@@ -288,8 +399,6 @@ footer h6{
   margin: 15px 0 15px 0;
 }
 /*FOOTER************************************/
-
-
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -392,7 +501,7 @@ footer h6{
   section.book div h4{
     font-size: 1.5rem;
   }
-  div{
+  div.left, div.right{
     width: 50%;
     text-align: center;
     margin: 0 auto 25px auto;
