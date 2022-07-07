@@ -8,7 +8,7 @@ This is a hip restaurant website I built that includes a seperate menu page and 
 ## How it's Made
 **Tech used:** HTML, CSS, JavaScript
 
-I started this website with an image of a layout template and coded it from scratch knowing I wanted it to be for a Japanese restaurant. I had already built out a couple of other static sites at this point so I was feeling confident enough to add a seperate menu page and try some new design choices. I also wanted to add an image carousel but I had never tried anything like that before so I watched a couple of tutorials, coded along, tweaked some things to fit my needs, and *VOILA,* a beautiful image carousel. Not too shabby.
+I started this website with an image of a layout template and coded it from scratch knowing I wanted it to be for a Japanese restaurant. I had already built out a couple of other static sites at this point so I was feeling confident enough to add a seperate menu page and try some new design choices. I also wanted to add an image carousel but I had never tried anything like that before so I watched a couple of tutorials, coded along, tweaked some things to fit my needs, and *voila,* a beautiful image carousel. Not too shabby.
 
 ## Optimizations
 Always keeping responsiveness in mind, I made sure everything looks good on desktop, mobile, and everything in between. I also noticed that the site was rather sluggish at first, so I compressed my image and video files. Much better.
