@@ -1,5 +1,5 @@
 # Umamichi Japanese Cuisine
-This is a hip restaurant website I built that includes a seperate menu page and showcases unique dishes with an interactive image carousel.
+This is a restaurant website I built that includes a seperate menu page and showcases unique dishes with an interactive image carousel.
 
 **Link to project:** https://umamichi.netlify.app
 
