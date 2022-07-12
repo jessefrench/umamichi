@@ -71,7 +71,7 @@ header ul{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #0f0e13;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -101,7 +101,7 @@ header ul{
   left: 0%;
   width: 0;
   height: 50px;
-  background: #e85e4f;
+  background: red;
   content: '';
   transition: width 0.35s ease-in-out;
 }
