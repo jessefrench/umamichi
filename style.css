@@ -126,7 +126,7 @@ section.about p{
 }
 section.about a{
   display: block;
-  width: 160px;
+  width: 170px;
   background: red;
   border: 1px solid black;
   padding: 15px;
@@ -386,6 +386,7 @@ footer li{
 footer h6{
   font-size: 16px;
   margin: 15px 0 15px 0;
+  padding-bottom: 15px;
 }
 /*FOOTER************************************/
 
@@ -393,21 +394,6 @@ footer h6{
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media screen and (max-width: 1603px){
-  section.grid{
-     padding: 0 10%;
-  }
-}
-@media screen and (max-width: 1503px){
-  section.grid{
-     padding: 0 5%;
-  }
-}
-@media screen and (max-width: 1337px){
-  section.grid{
-     padding: 0;
-  }
-}
 @media screen and (max-width: 1097px){
   h1{
     font-size: 8rem;
@@ -443,7 +429,7 @@ footer h6{
     height: 650px;
   }
   h1{
-    width: 100%;
+    width: 90%;
     font-size: 8rem;
     padding-top: 50px;
   }
@@ -471,7 +457,10 @@ footer h6{
     font-size: 5rem;
   }
   section.order ul{
-    width: 100%;
+    width: 90%;
+  }
+  section.order li{
+    margin: 15px;
   }
   section.order a{
     font-size: 1.5rem;
@@ -508,5 +497,8 @@ footer h6{
   }
   main a{
     font-size: 2rem;
+  }
+  video{
+    width: 90%;
   }
 }
