@@ -30,10 +30,21 @@
 					<li><a href="#featured">Featured</a></li>
 					<li><a href="#book-a-table">Book Table</a></li>
 					<li><a href="#reviews">Reviews</a></li>
-					<li class="menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+					<li id="pg-content" class="menu" style="cursor: pointer" onclick="openSM()">&#9776;</li>
 				</ul>
 			</nav>
 		</header>
+		<div id="mySidemenu" class="sidemenu">
+			<a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+			<div class="sm-wrapper">
+				<a href="#">Home</a>
+				<a href="#">About Us</a>
+				<a href="#">Menu</a>
+				<a href="#">Featured</a>
+				<a href="#">Book Table</a>
+				<a href="#">Reviews</a>
+			</div>
+		</div>
 		<main id="home">
 			<h1>Welcome to Umamichi!</h1>
 			<form action="search">
@@ -197,7 +208,7 @@
 				<li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
 				<li><a href="mailto:" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
 			</ul>
-			<h6><a href="https://jessefrench.netlify.app" target="_blank">© Jesse French</a></h6>
+			<h6><a href="https://jessefrenchdev.com" target="_blank">© Jesse French</a></h6>
 		</footer>
 		<script type="text/javascript" src="main.js"></script>
 	</body>
